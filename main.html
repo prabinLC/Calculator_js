@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .nameId {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 30px;
+      }
+      .forms {
+        background-color: azure;
+        font-weight: bold;
+        align-items: center;
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+      .finalresult {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: bold;
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nameId">Calculator</div>
+    <form class="forms">
+      value 1 : <input type="text" id="value1" /> value 2 :
+      <input type="text" id="value2" />
+
+      Operator:
+      <select id="operator">
+        <option value="add">Add</option>
+        <option value="sub">Subtract</option>
+        <option value="div">Divide</option>
+        <option value="mul">Multiply</option>
+      </select>
+      <button type="button" onclick="calculator()">Calculate</button>
+    </form>
+    <div class="finalresult" id="results"></div>
+  </body>
+  <script src="main.js"></script>
+</html>
